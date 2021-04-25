@@ -70,7 +70,7 @@ $(function () {
         index = -1;
     });
 
-    // sự kiện click vào một item trong danh sách của combobox.
+    // click vào một item trong danh sách của combobox.
     cbBox.on('mousedown', '.datalist li', function (e) {
         e.preventDefault();
         selectItemCombobox($(this));
@@ -168,6 +168,13 @@ function selectItemCombobox(eleSelected) {
     combobox.focus();
     dataListEle.addClass('hide');
 }
-// jQuery.fn.extend({
-
-// })
+$("input").focusout(function() { 
+    if($(this).val()=='') { 
+        $(this).css('border', 'solid 1px red'); 
+    }
+    else {
+          
+        // If it is not blank.
+        $(this).css('border', 'solid 1px green');    
+    }    
+})

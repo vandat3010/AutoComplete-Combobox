@@ -2,16 +2,17 @@
     box-sizing: border-box;
 }
 
-.cb-autocomplete {
+.cb-autocomplete, .demo {
     position: relative;
     display: inline-block;
+    margin: 219px 0 0 300px;
 }
 
-.cb-autocomplete .field {
+.cb-autocomplete .field, .demo .de {
     position: relative;
     display: inline-block;
 }
-.cb-autocomplete .cb {
+.cb-autocomplete .cb, .demo .mo {
     height: 40px;
     font-size: 13px;
     padding-left: 16px;
@@ -21,7 +22,7 @@
     border-radius: 4px;
 }
 
-.cb-autocomplete .icon {
+.cb-autocomplete .icon, .demo .icon {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -35,8 +36,8 @@
     cursor: pointer;
 }
 
-.cb-autocomplete .cb:focus, 
-.cb-autocomplete .cb:focus + .icon {
+.cb-autocomplete .cb:focus, .demo .mo:focus, 
+.cb-autocomplete .cb:focus + .icon, .demo .mo:focus + .icon {
     border-color: green;
 }
 
