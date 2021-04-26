@@ -36,7 +36,7 @@ const combobox = cbBox.find('.cb');
 let index = -1;
 
 /**
- * Item đang được chọn.
+ * ham getValue, getText
  */
 let selectedItem = null;
 (function( $ ){
@@ -129,8 +129,6 @@ $(function () {
 
 /**
  * Hàm bind data vào html cho danh sách combobox.
- * @param {Array} datalist danh sách hiện tại của combobox.
- * @param {Boolean} isInput Xác định đang nhập dữ liệu hay đang click vào icon toggle.
  */
 function bindDataListToHtml(datalist, isInput) {
     if (isInput) {
@@ -155,7 +153,6 @@ function bindDataListToHtml(datalist, isInput) {
 
 /**
  * Hàm chọn một item trong danh sách của combobox.
- * @param {Element} eleSelected Item được chọn trong danh sách của combobox.
  */
 function selectItemCombobox(eleSelected) {
     let data = eleSelected.data();
